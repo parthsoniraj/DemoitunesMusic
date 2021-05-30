@@ -1,0 +1,49 @@
+class GraphqlQueries {
+  static String getSearchResult({String term}) {
+    return """
+ {
+  results {
+    wrapperType
+    kind
+    collectionId
+    trackId
+    artistName
+    collectionName
+    trackName
+    collectionCensoredName
+    trackCensoredName
+    collectionArtistId
+    collectionArtistViewUrl
+    collectionViewUrl
+    trackViewUrl
+    previewUrl
+    artworkUrl30
+    artworkUrl60
+    artworkUrl100
+    collectionPrice
+    trackPrice
+    trackRentalPrice
+    collectionHdPrice
+    trackHdPrice
+    trackHdRentalPrice
+    releaseDate
+    collectionExplicitness
+    trackExplicitness
+    discCount
+    discNumber
+    trackCount
+    trackNumber
+    trackTimeMillis
+    country
+    currency
+    primaryGenreName
+    contentAdvisoryRating
+    shortDescription
+    longDescription
+    hasITunesExtras
+  }
+  resultCount
+}
+              """;
+  }
+}
