@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:demo_itunes_music/core_component/api_repositories/api_service.dart';
-import 'package:demo_itunes_music/core_component/api_repositories/errors/network_errorvice.dart';
+import 'package:demo_itunes_music/core_component/api_repositories/errors/network_error.dart';
 import 'package:demo_itunes_music/modules/itunesListPage/model/music_item_list_model.dart';
 
 class AppRepository {
@@ -10,6 +10,7 @@ class AppRepository {
 
   // Singleton static  instance
   static final AppRepository _instance = AppRepository._privateConstructor();
+
   // Factory constructor
   factory AppRepository() {
     return _instance;
